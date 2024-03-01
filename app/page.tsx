@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <main className="px-16 pt-16 text-center lg:pt-24">
+    <main className="px-16 py-16 text-center lg:py-24">
       <section className="flex flex-col items-center gap-5 lg:flex-row-reverse lg:justify-center">
         <h1 className="text-2xl lg:text-3xl lg:text-left">{"Hi, I'm Victor Duran, "}
           <span className="block"> a <span className="underline">FullStack</span> Software Developer</span>
