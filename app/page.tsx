@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+import Project from "./components/Project";
 
 export default function Home() {
-
   return (
     <main className="px-16 py-16 text-center lg:py-24">
-      <section className="flex flex-col items-center gap-5 lg:flex-row-reverse lg:justify-center">
+      <section className="flex flex-col items-center gap-5 lg:flex-row-reverse lg:justify-center lg:gap-10">
         <h1 className="text-2xl lg:text-3xl lg:text-left">{"Hi, I'm Victor Duran, "}
           <span className="block"> a <span className="underline">FullStack</span> Software Developer</span>
         </h1>
@@ -38,10 +37,7 @@ export default function Home() {
         <h2 className="text-2xl lg:text-3xl">Personal Projects</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,300px))] justify-center gap-5">
           {Array.from({ length: 10 }).map((_, index) => (
-            <div key={index} className="aspect-square bg-gray-200 flex flex-col justify-center items-center gap-6">
-              <Link href="/">GitHub</Link>
-              <Link href="/">Live</Link>
-            </div>
+            <Project key={index} githubUrl={""} liveUrl={""}></Project>
           ))}
         </div>
       </section>
