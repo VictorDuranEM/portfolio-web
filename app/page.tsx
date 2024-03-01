@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="px-16 pt-16 text-center lg:pt-24">
       <section className="flex flex-col items-center gap-5 lg:flex-row-reverse lg:justify-center">
-        <h1 className="text-2xl lg:text-3xl lg:text-left">Hi, I'm Victor Duran, 
+        <h1 className="text-2xl lg:text-3xl lg:text-left">{"Hi, I'm Victor Duran, "}
           <span className="block"> a <span className="underline">FullStack</span> Software Developer</span>
         </h1>
         <Image
@@ -38,7 +38,7 @@ export default function Home() {
         <h2 className="text-2xl lg:text-3xl">Personal Projects</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,300px))] justify-center gap-5">
           {Array.from({ length: 10 }).map((_, index) => (
-            <div className="aspect-square bg-gray-200 flex flex-col justify-center items-center gap-6">
+            <div key={index} className="aspect-square bg-gray-200 flex flex-col justify-center items-center gap-6">
               <Link href="/">GitHub</Link>
               <Link href="/">Live</Link>
             </div>
