@@ -27,6 +27,7 @@ export default function Home() {
             <li>NextJS</li>
           </ol>
           <ol>
+            <li>Figma</li>
             <li>AWS</li>
             <li>Kubernetes</li>
             <li>Docker</li>
