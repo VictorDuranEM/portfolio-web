@@ -1,8 +1,18 @@
 import Link from "next/link";
 
-export default function Project({ githubUrl, liveUrl }: { githubUrl: string, liveUrl: string }) {
+type ProjectProps = {
+  githubUrl?: string;
+  liveUrl?: string;
+  bgColor: string;
+};
+
+export default function Project({
+  githubUrl = "", 
+  liveUrl = "", 
+  bgColor 
+}: ProjectProps) {
   return (
-    <div className="aspect-square bg-gray-200 flex flex-col justify-center items-center gap-6">
+    <div className={`w-[300px] aspect-square flex flex-col justify-center items-center gap-6 ${bgColor}`}>
       <Link href={githubUrl}>GitHub</Link>
       <Link href={liveUrl}>Live</Link>
     </div>

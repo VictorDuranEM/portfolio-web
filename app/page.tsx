@@ -36,9 +36,9 @@ export default function Home() {
       </section>
       <section className="mt-12 flex flex-col gap-6 lg:mt-24">
         <h2 className="text-2xl lg:text-3xl">Personal Projects</h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,300px))] justify-center gap-5">
+        <div className="grid grid-cols-[repeat(auto-fit,300px)] justify-center gap-5">
           {Array.from({ length: 10 }).map((_, index) => (
-            <Project key={index} githubUrl={""} liveUrl={""}></Project>
+            <Project key={index} githubUrl={""} liveUrl={""} bgColor={"bg-gray-200"}></Project>
           ))}
         </div>
       </section>
